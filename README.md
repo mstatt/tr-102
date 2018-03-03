@@ -54,15 +54,25 @@ Here are all of the commands to run(once Node is installed):
 >>npm install gulp gulp-htmlclean gulp-clean-css gulp-concat gulp-uglify run-sequence gulp-bump del gulp-remove-empty-lines gulp-clean gulp-js-obfuscator --save-dev
 
 Now open your gulpfile.js with a text editor (Ensure that the following is included):
+
 ******************** Below this line****************
+
 //Plugins and requires
+
 var gulp = require('gulp');
+
 var bump = require('gulp-bump');
+
 var clean = require('gulp-clean');
+
 var uglify = require('gulp-uglify');
+
 var concat = require('gulp-concat');
+
 var runSequence = require('run-sequence');
+
 var js_obfuscator = require('gulp-js-obfuscator');
+
 var clearlines = require('gulp-remove-empty-lines');
 
 //Set up Paths
