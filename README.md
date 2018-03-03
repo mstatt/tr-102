@@ -91,7 +91,7 @@ Part I: (Live Reload)
 
 https://github.com/mstatt/tr-101
 
-Part III: (Javascript Obfuscation)
+Part III: (Live reload)
 
 https://github.com/mstatt/tr-103
 
