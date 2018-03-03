@@ -39,16 +39,16 @@ gulp.task('buildtest', function() {
 gulp.task('scriptswork',function (){
   console.log('Starting scripts task');
   //Uglify all js files in the 'public/scripts' directory
-   return gulp.src(DEV_PATH + 'js/dev-main.js')
+   return gulp.src(DEV_PATH + 'js/main.js')
          .pipe(uglify())
          .pipe(concat('main.js'))
-         .pipe(gulp.dest(DEV_PATH + '/js'))
+         .pipe(gulp.dest(DEV_PATH + '/js/obf'))
 });
 
 
 //Pre-obfuscation remove current js file to avoid conflict
 gulp.task('pre-obfuscation', function () {
-    return gulp.src([TEST_PATH + '/js/main.js',TEST_PATH + '/js/dev-main.js'], {read: false})
+    return gulp.src([TEST_PATH + '/js/main.js',TEST_PATH + '/js/obf'], {read: false})
         .pipe(clean());
 });
 
@@ -60,7 +60,7 @@ gulp.task('obfuscate',function (){
       js: TEST_PATH + '/js',
     },
     src: {
-      js: DEV_PATH + '/js/main.js',
+      js: DEV_PATH + '/js/obf/main.js',
     }
 };
   return gulp.src(path.src.js)
@@ -95,6 +95,13 @@ gulp.task("bump", function () {
         .pipe(gulp.dest("./"));
 });
 
+
+//Pre-obfuscation remove current js file to avoid conflict
+gulp.task('postflight', function () {
+    return gulp.src([TEST_PATH,DEV_PATH + '/js/obf'], {read: false})
+        .pipe(clean());
+});
+
 //In sequence build the test directory, clean up index.html and update version # in the package.json
 //publishtest
 gulp.task('publishtest',function (){
@@ -103,10 +110,10 @@ runSequence('cleantest','scriptswork','buildtest','indexcleanup','pre-obfuscatio
 console.log('Completed publishing test files..............');
 });
 
-//Publish files from test to prod
+//Publish files from test to prod and delete test dir
 //publishprod
 gulp.task('publishprod',function (){
 console.log('Starting to Publish production files..............');
-runSequence('cleanprod','buildprod');
+runSequence('cleanprod','buildprod','postflight');
 console.log('Completed publishing production files..............');
 });
