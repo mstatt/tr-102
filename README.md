@@ -196,8 +196,7 @@ console.log('Completed publishing production files..............');
 # Run
 ************************************************
 
---Open the index.html file in the dev directory.
---Notice the comments and empty lines
+--Open the dev-main.js file in the dev directory. (It is as you coded it)
 
 --Open the package.json file in the dev directory.
 --Notice the version #
@@ -207,8 +206,7 @@ console.log('Completed publishing production files..............');
 >>gulp publishtest
 
 
---Now open the index.html file in the test directory with a text editor.
---Notice that there are no blanklines or comments.
+--Open the main.js file in the dev directory. (It is obfuscated)
 
 --Now open the package.json file in the project directory with a text editor.
 --Notice that version # has been incremented.
@@ -216,7 +214,7 @@ console.log('Completed publishing production files..............');
 **********************Run the following command in the terminal***************
 >>gulp publishprod
 
---Now all of the files from the test directory are in the production folder ready fr deployment.
+--Now all of the files from the test directory are in the production folder ready for deployment.
 
 ************************************************
 ####Extra npm commands:
