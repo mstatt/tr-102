@@ -84,7 +84,7 @@ Here are all of the commands to run(once Node is installed):
 ####Extra npm commands:
 -Remove unused packages from the directory to keep things lean.
 
-npm prune
+>>npm prune
 
 
 ************************************************
