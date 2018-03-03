@@ -1,6 +1,6 @@
 # Task Runners 102:
 
-As a continuation forom the 1st task runner tutorial, in this session we are going to be installing and using gulp.js again but we want to add to our html page optimization with javascript uglification and javascript obfuscation.
+As a continuation from the 1st task runner tutorial, in this session we are going to be installing and using gulp.js again but we want to add to our html page optimization with javascript uglification and javascript obfuscation.
 
 # Set up your directory structure as follows:
 Project Folder(TR-101)
