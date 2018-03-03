@@ -86,6 +86,10 @@ Here are all of the commands to run(once Node is installed):
 
 >>npm prune
 
+************************************************
+Part I: (HTML File clean-up)
+
+https://github.com/mstatt/tr-101
 
 ************************************************
 Helpful Link:
