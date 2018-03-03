@@ -64,7 +64,7 @@ Here are all of the commands to run(once Node is installed):
 
 
 **********************Run the following command in the terminal***************
->>gulp publishtest
+>>gulp stagetest
 
 
 --Open the main.js file in the dev/obf directory. (It is uglified)
@@ -75,7 +75,7 @@ Here are all of the commands to run(once Node is installed):
 --Notice that version # has been incremented.
 
 **********************Run the following command in the terminal***************
->>gulp publishprod
+>>gulp stageprod
 
 --Now all of the files from the test directory are in the production folder ready for deployment.
 --Notice that test directory has been deleted and the so has the dev/obf directory.
