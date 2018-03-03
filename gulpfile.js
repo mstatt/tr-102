@@ -102,17 +102,16 @@ gulp.task('postflight', function () {
         .pipe(clean());
 });
 
-//In sequence build the test directory, clean up index.html and update version # in the package.json
+//In sequence build the test directory, clean up index.html and update version # in the package.json and stage all of the files
 //publishtest
-gulp.task('publishtest',function (){
+gulp.task('stagetest',function (){
 console.log('Starting to Publish test files..............');
 runSequence('cleantest','scriptswork','buildtest','indexcleanup','pre-obfuscation','obfuscate','bump');
 console.log('Completed publishing test files..............');
 });
 
-//Publish files from test to prod and delete test dir
-//publishprod
-gulp.task('publishprod',function (){
+//Stage files from test to prod and delete test dir
+gulp.task('stageprod',function (){
 console.log('Starting to Publish production files..............');
 runSequence('cleanprod','buildprod','postflight');
 console.log('Completed publishing production files..............');
