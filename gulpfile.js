@@ -37,11 +37,10 @@ gulp.task('buildtest', function() {
 
 //Uglify and combine all specified js files into one
 gulp.task('scriptswork',function (){
-  console.log('Starting scripts task');
-  //Uglify all js files in the 'public/scripts' directory
+  console.log('Starting scriptswork task');
    return gulp.src(DEV_PATH + 'js/main.js')
          .pipe(uglify())
-         .pipe(concat('main.js'))
+         .pipe(concat('main.js')) // This is if you are combining multiple js files into one.
          .pipe(gulp.dest(DEV_PATH + '/js/obf'))
 });
 
