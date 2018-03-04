@@ -6,15 +6,10 @@ As a continuation from the 1st task runner tutorial, in this session we are goin
 Project Folder(TR-102)
 
 tr-102/
-
    |- dev/
-
        |- index.html
-   
        |- js/
-   
            |- main.js
-      
            |- jquery-3.3.1.min.js
       
 gulpfile.js
@@ -88,7 +83,7 @@ Here are all of the commands to run(once Node is installed):
 >>npm prune
 
 ************************************************
-Part I: (Live Reload)
+Part I: (HTML File clean-up)
 
 https://github.com/mstatt/tr-101
 
