@@ -5,25 +5,26 @@ As a continuation from the 1st task runner tutorial, in this session we are goin
 # TR-102 dev directory structure as follows:
 Project Folder(TR-102)
 
--test
+tr-102/
 
--prod
+   |- dev/
 
--dev
+       |- index.html
+   
+       |- js/
+   
+           |- main.js
+      
+           |- jquery-3.3.1.min.js
+      
+gulpfile.js
 
---index.html
+README.md
 
---css
+package.json
 
---js
+package-lock.json
 
----main.js
-
----jquery-3.3.1.min.js
-
---img
-
---assets
 
 *** ">>" means run this from the command terminal without the ">>" ***
 
