@@ -6,10 +6,15 @@ As a continuation from the 1st task runner tutorial, in this session we are goin
 Project Folder(TR-102)
 
 tr-102/
+
    |- dev/
+   
        |- index.html
+       
        |- js/
+       
            |- main.js
+           
            |- jquery-3.3.1.min.js
       
 gulpfile.js
