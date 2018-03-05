@@ -61,6 +61,7 @@ Here are all of the commands to run(once Node is installed):
 --Open the dev-main.js file in the dev directory. (It is as you coded it)
 
 --Open the package.json file in the dev directory.
+
 --Notice the version #
 
 
@@ -73,12 +74,14 @@ Here are all of the commands to run(once Node is installed):
 --Open the main.js file in the test directory. (It is obfuscated)
 
 --Now open the package.json file in the project directory with a text editor.
+
 --Notice that version # has been incremented.
 
 **********************Run the following command in the terminal***************
 >>gulp stageprod
 
 --Now all of the files from the test directory are in the production folder ready for deployment.
+
 --Notice that test directory has been deleted and the so has the dev/obf directory.
 
 ************************************************
