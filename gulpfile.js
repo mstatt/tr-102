@@ -4,6 +4,7 @@ var bump = require('gulp-bump');
 var clean = require('gulp-clean');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var htmlmin = require('gulp-htmlmin');
 var runSequence = require('run-sequence');
 var js_obfuscator = require('gulp-js-obfuscator');
 var clearlines = require('gulp-remove-empty-lines');
@@ -82,6 +83,7 @@ gulp.task('indexcleanup', function () {
   .pipe(clearlines({
     removeComments: true
   }))
+  .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest(TEST_PATH));
 });
 
