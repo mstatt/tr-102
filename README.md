@@ -52,7 +52,7 @@ Here are all of the commands to run(once Node is installed):
 >>npm install
 
 ********************** Single line command to install all plugins ***************
->>npm install gulp gulp-htmlclean gulp-clean-css gulp-concat gulp-uglify run-sequence gulp-bump del gulp-remove-empty-lines gulp-htmlmin  gulp-clean gulp-js-obfuscator --save-dev
+>>npm install gulp gulp-cli gulp-htmlclean gulp-clean-css gulp-concat gulp-uglify run-sequence gulp-bump del gulp-remove-empty-lines gulp-htmlmin  gulp-clean gulp-js-obfuscator --save-dev
 
 
 # Run
